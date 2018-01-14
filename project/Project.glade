@@ -14,11 +14,12 @@
             <property name="visible">True</property>
             <property name="n_rows">4</property>
             <property name="n_columns">2</property>
+            <property name="homogeneous">True</property>
             <child>
               <object class="GtkEntry" id="entry1">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Imie</property>
+                <property name="tooltip_text" translatable="yes">imie</property>
                 <property name="invisible_char">&#x25CF;</property>
                 <property name="width_chars">0</property>
                 <property name="text" translatable="yes">imie</property>
@@ -33,7 +34,7 @@
               <object class="GtkEntry" id="entry2">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Nazwisko</property>
+                <property name="tooltip_text" translatable="yes">nazwisko</property>
                 <property name="invisible_char">&#x25CF;</property>
                 <property name="width_chars">0</property>
                 <property name="text" translatable="yes">nazwisko</property>
@@ -52,10 +53,10 @@
               <object class="GtkEntry" id="entry3">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Masa</property>
+                <property name="tooltip_text" translatable="yes">wiek</property>
                 <property name="invisible_char">&#x25CF;</property>
                 <property name="width_chars">0</property>
-                <property name="text" translatable="yes">masa(kg)</property>
+                <property name="text" translatable="yes">wiek</property>
                 <property name="overwrite_mode">True</property>
                 <property name="caps_lock_warning">False</property>
                 <property name="primary_icon_stock">gtk-cut</property>
@@ -69,31 +70,13 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="entry4">
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Wiek</property>
-                <property name="invisible_char">&#x25CF;</property>
-                <property name="width_chars">0</property>
-                <property name="text" translatable="yes">wiek</property>
-                <property name="overwrite_mode">True</property>
-                <property name="caps_lock_warning">False</property>
-                <property name="primary_icon_stock">gtk-cut</property>
-                <signal name="icon_press" handler="on_entry4_icon_press"/>
-              </object>
-              <packing>
-                <property name="top_attach">1</property>
-                <property name="bottom_attach">2</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkEntry" id="entry5">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Czas(gg:mm:ss)</property>
+                <property name="tooltip_text" translatable="yes">obw&#xF3;d talii(cm)</property>
                 <property name="invisible_char">&#x25CF;</property>
                 <property name="width_chars">0</property>
-                <property name="text" translatable="yes">czas(gg:mm:ss)</property>
+                <property name="text" translatable="yes">obw&#xF3;d talii(cm)</property>
                 <property name="shadow_type">etched-in</property>
                 <property name="overwrite_mode">True</property>
                 <property name="caps_lock_warning">False</property>
@@ -111,10 +94,10 @@
               <object class="GtkEntry" id="entry6">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Obw&#xF3;d biodra</property>
+                <property name="tooltip_text" translatable="yes">waga(kg)</property>
                 <property name="invisible_char">&#x25CF;</property>
                 <property name="width_chars">0</property>
-                <property name="text" translatable="yes">obw&#xF3;d biodra</property>
+                <property name="text" translatable="yes">waga(kg)</property>
                 <property name="overwrite_mode">True</property>
                 <property name="caps_lock_warning">False</property>
                 <property name="primary_icon_stock">gtk-cut</property>
@@ -131,7 +114,7 @@
               <object class="GtkEntry" id="entry7">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Wzrost(cm)</property>
+                <property name="tooltip_text" translatable="yes">wzrost(cm)</property>
                 <property name="invisible_char">&#x25CF;</property>
                 <property name="width_chars">0</property>
                 <property name="text" translatable="yes">wzrost(cm)</property>
@@ -146,17 +129,27 @@
               </packing>
             </child>
             <child>
-              <object class="GtkEntry" id="entry8">
+              <object class="GtkVBox" id="vbox2">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="tooltip_text" translatable="yes">Trasa(km)</property>
-                <property name="invisible_char">&#x25CF;</property>
-                <property name="width_chars">0</property>
-                <property name="text" translatable="yes">trasa(km)</property>
-                <property name="overwrite_mode">True</property>
-                <property name="caps_lock_warning">False</property>
-                <property name="primary_icon_stock">gtk-cut</property>
-                <signal name="icon_press" handler="on_entry8_icon_press"/>
+                <property name="tooltip_text" translatable="yes">p&#x142;e&#x107;</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkVBox" id="vbox3">
+                <property name="visible">True</property>
+                <property name="tooltip_text" translatable="yes">poziom aktywno&#x15B;ci fizycznej</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
               </object>
               <packing>
                 <property name="top_attach">3</property>
@@ -170,7 +163,7 @@
         </child>
         <child>
           <object class="GtkRadioButton" id="radiobutton2">
-            <property name="label" translatable="yes">Tempo biegu</property>
+            <property name="label" translatable="yes">Kalkulator t&#x119;tna maksymalnego</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
@@ -197,7 +190,7 @@
         </child>
         <child>
           <object class="GtkRadioButton" id="radiobutton4">
-            <property name="label" translatable="yes">Kalkulator kalorii</property>
+            <property name="label" translatable="yes">Dzienne zapotrzebowanie na kalorie</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
@@ -451,5 +444,19 @@ uderze&#x144; na minut&#x119;.</property>
         </child>
       </object>
     </child>
+  </object>
+  <object class="GtkListStore" id="p&#x142;e&#x107;">
+    <columns>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">m&#x119;&#x17C;czyzna</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">kobieta</col>
+      </row>
+    </data>
   </object>
 </interface>

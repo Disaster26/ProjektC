@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1514725429 source:c:\users\lukas\documents\studia\project\main.c
-	<stdlib.h>
+1515952337 source:c:\users\lukas\documents\studia\project\main.c
 	<gtk/gtk.h>
+	<string.h>
+	<stdlib.h>
 
 1379768117 c:\gtk\include\gtk-3.0\gtk\gtk.h
 	<gdk/gdk.h>
@@ -2420,9 +2421,4 @@
 
 1379768116 c:\gtk\include\gtk-3.0\gtk\deprecated\gtkvseparator.h
 	<gtk/gtkseparator.h>
-
-1514765304 source:c:\users\lukas\documents\project\main.c
-	<gtk/gtk.h>
-	<string.h>
-	<stdlib.h>
 
